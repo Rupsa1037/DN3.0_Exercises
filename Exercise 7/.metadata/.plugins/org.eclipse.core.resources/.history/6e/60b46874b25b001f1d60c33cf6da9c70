@@ -1,5 +1,0 @@
-package com.code.api.mapper;
-@Mapper
-public interface BookMapper {
-
-}
