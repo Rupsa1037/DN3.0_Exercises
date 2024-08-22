@@ -1,0 +1,1478 @@
+!SESSION 2024-08-20 12:20:42.589 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data C:\Users\91863\Desktop\Week_4_Exercises\Exercise 7\bookstoreapi -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2024-08-20 12:20:44.315
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core [167]
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+       org.apache.httpcomponents.core5.httpcore5 [61]
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+       org.apache.httpcomponents.client5.httpclient5 [59]
+         Unresolved requirement: Import-Package: org.conscrypt; resolution:="optional"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.support; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.command; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.command; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.pool; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.pool; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.ssl; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.reactor.ssl; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.reactor.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.io; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.reactor; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.reactor; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.ssl; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.support; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.ssl; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.io; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.function; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.function; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.concurrent; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.concurrent; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.nio; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.impl.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.message,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.nio.ssl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.entity; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.nio.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.nio"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic.methods; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.classic.methods; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.config,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.message"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.io; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.io,org.apache.hc.client5.http.socket,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.config; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.config; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss,org.slf4j"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.io; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="javax.net.ssl,org.apache.hc.client5.http,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.entity; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.entity; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io.entity"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.psl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.pool,org.apache.hc.core5.util,org.slf4j"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.protocol,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"] because it is exposed to package 'org.apache.hc.client5.http' from resources org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] and org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.1.v20230802-0806"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http)(&(version>=5.1.0)(!(version>=5.2.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.impl.classic)(&(version>=5.1.0)(!(version>=5.2.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http.impl.classic; uses:=org.apache.hc.client5.http.routing
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.routing)(&(version>=5.1.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.routing; uses:=org.apache.hc.client5.http
+    export: osgi.wiring.package=org.apache.hc.client5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.1.v20230802-0806"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2024-08-20 12:20:44.368
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [168]
+  Unresolved requirement: Import-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-version="1.10.1"
+    -> Export-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-symbolic-name="org.eclipse.epp.mpc.core"; bundle-version="1.10.1.v20221110-1841"; version="0.0.0"; x-friends:="org.eclipse.epp.mpc.core.win32"; uses:="org.apache.http.auth,  org.apache.http.protocol,  org.apache.http.impl.client,  org.apache.http,  org.eclipse.epp.mpc.core.service,  org.apache.http.client,  org.eclipse.core.runtime,  org.apache.http.client.fluent,  org.apache.http.client.protocol"
+       org.eclipse.epp.mpc.core [167]
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+              org.apache.httpcomponents.core5.httpcore5 [61]
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+              org.apache.httpcomponents.client5.httpclient5 [59]
+                Unresolved requirement: Import-Package: org.conscrypt; resolution:="optional"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.support; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.command; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.command; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.pool; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.pool; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.reactor.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.reactor.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.io; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.reactor; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.reactor; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.support; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.io; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.function; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.function; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.concurrent; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.concurrent; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.nio; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.message,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.nio.ssl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.entity; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.nio"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic.methods; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic.methods; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.config,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.message"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.io; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.io,org.apache.hc.client5.http.socket,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.config; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.config; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.io; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="javax.net.ssl,org.apache.hc.client5.http,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.entity; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.entity; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io.entity"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.psl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.pool,org.apache.hc.core5.util,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.protocol,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.win; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.win; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5-win"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.client5.http.impl.classic,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+       org.apache.httpcomponents.client5.httpclient5-win [60]
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http; resolution:="optional"
+           -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; resolution:="optional"
+           -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; resolution:="optional"
+           -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.1.3,6.0.0)"
+           -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; resolution:="optional"
+           -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; resolution:="optional"
+           -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss,org.slf4j"
+  Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.1.0,5.2.0)"
+    -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"] because it is exposed to package 'org.apache.hc.client5.http.auth' from resources org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] and org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.1.v20230802-0806"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.auth)(&(version>=5.1.0)(!(version>=5.2.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core.win32 [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core.win32"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.impl.classic)(&(version>=5.1.0)(!(version>=5.2.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http.impl.classic; uses:=org.apache.hc.client5.http.routing
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.routing)(&(version>=5.1.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.routing; uses:=org.apache.hc.client5.http.auth
+    export: osgi.wiring.package=org.apache.hc.client5.http.auth
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.1.v20230802-0806"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2024-08-20 12:20:44.401
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.ui [170]
+  Unresolved requirement: Require-Bundle: org.eclipse.epp.mpc.core; bundle-version="[1.10.1,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.epp.mpc.core; bundle-version="1.10.1.v20221110-1841"; singleton:="true"
+       org.eclipse.epp.mpc.core [167]
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+              org.apache.httpcomponents.core5.httpcore5 [61]
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.protocol; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol"
+              org.apache.httpcomponents.client5.httpclient5 [59]
+                Unresolved requirement: Import-Package: org.conscrypt; resolution:="optional"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.support; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.command; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.command; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.pool; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.pool; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.reactor.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.reactor.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.io; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.reactor; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.reactor; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.reactor.ssl,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.support; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.net"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.ssl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.ssl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.io; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.entity; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.io.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.io"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.function; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.function; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.config; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.config; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.concurrent; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.concurrent; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.impl.nio; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.impl.nio; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.message,org.apache.hc.core5.http.nio,org.apache.hc.core5.http.nio.ssl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.reactor,org.apache.hc.core5.util"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.net; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.net; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+                Unresolved requirement: Import-Package: org.apache.hc.core5.http.nio.entity; version="[5.1.3,6.0.0)"
+                  -> Export-Package: org.apache.hc.core5.http.nio.entity; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.concurrent,org.apache.hc.core5.function,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.nio"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic.methods; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic.methods; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.config,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.message"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.util; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.util; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.io; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.io,org.apache.hc.client5.http.socket,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.io.support; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.io.support; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.http.support,org.apache.hc.core5.net"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.config; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.config; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.message; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.message; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.auth; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.message,org.apache.hc.core5.http.protocol,org.ietf.jgss,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.io; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.io; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="javax.net.ssl,org.apache.hc.client5.http,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http.auth,org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.auth; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.auth; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.cookie; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.protocol"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.entity; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.entity; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.core5.http,org.apache.hc.core5.http.io.entity"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.psl,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl,org.apache.hc.core5.http.protocol,org.apache.hc.core5.net,org.apache.hc.core5.pool,org.apache.hc.core5.util,org.slf4j"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.impl.classic; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.impl.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.auth,org.apache.hc.client5.http.classic,org.apache.hc.client5.http.config,org.apache.hc.client5.http.cookie,org.apache.hc.client5.http.entity,org.apache.hc.client5.http.impl,org.apache.hc.client5.http.io,org.apache.hc.client5.http.protocol,org.apache.hc.client5.http.routing,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.config,org.apache.hc.core5.http.impl.io,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.io,org.apache.hc.core5.pool,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.client5.http.classic; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.client5.http.classic; bundle-symbolic-name="org.apache.httpcomponents.client5.httpclient5"; bundle-version="5.1.3.v20221013-1742"; version="5.1.3"; uses:="org.apache.hc.client5.http,org.apache.hc.client5.http.protocol,org.apache.hc.core5.concurrent,org.apache.hc.core5.http,org.apache.hc.core5.http.io,org.apache.hc.core5.http.protocol,org.apache.hc.core5.util"
+         Unresolved requirement: Import-Package: org.apache.hc.core5.http.protocol; version="[5.1.0,5.2.0)"
+           -> Export-Package: org.apache.hc.core5.http.protocol; bundle-symbolic-name="org.apache.httpcomponents.core5.httpcore5"; bundle-version="5.1.4.v20221013-1742"; version="5.1.4"; uses:="javax.net.ssl,org.apache.hc.core5.function,org.apache.hc.core5.http"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"] because it is exposed to package 'org.apache.hc.client5.http' from resources org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] and org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.1.v20230802-0806"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http)(&(version>=5.1.0)(!(version>=5.2.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+
+Chain 2:
+  org.eclipse.epp.mpc.core [osgi.identity; type="osgi.bundle"; version:Version="1.10.1.v20221110-1841"; osgi.identity="org.eclipse.epp.mpc.core"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.impl.classic)(&(version>=5.1.0)(!(version>=5.2.0))))
+     |
+    export: osgi.wiring.package=org.apache.hc.client5.http.impl.classic; uses:=org.apache.hc.client5.http.routing
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.1.3.v20221013-1742"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+    import: (&(osgi.wiring.package=org.apache.hc.client5.http.routing)(&(version>=5.1.0)(!(version>=6.0.0))))
+     |
+    export: osgi.wiring.package: org.apache.hc.client5.http.routing; uses:=org.apache.hc.client5.http
+    export: osgi.wiring.package=org.apache.hc.client5.http
+  org.apache.httpcomponents.client5.httpclient5 [osgi.identity; type="osgi.bundle"; version:Version="5.2.1.v20230802-0806"; osgi.identity="org.apache.httpcomponents.client5.httpclient5"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis.consumption.core 4 0 2024-08-20 12:20:44.583
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.consumption.core [767]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.jst.ws.axis.consumption.core [osgi.identity; type="osgi.bundle"; version:Version="1.0.601.v202304290519"; osgi.identity="org.eclipse.jst.ws.axis.consumption.core"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jst.ws.axis.consumption.core [osgi.identity; type="osgi.bundle"; version:Version="1.0.601.v202304290519"; osgi.identity="org.eclipse.jst.ws.axis.consumption.core"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.jst.ws.axis.consumption.core [osgi.identity; type="osgi.bundle"; version:Version="1.0.601.v202304290519"; osgi.identity="org.eclipse.jst.ws.axis.consumption.core"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=1.5.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis.consumption.ui 4 0 2024-08-20 12:20:44.608
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.consumption.ui [768]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis.consumption.core; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis.consumption.core; bundle-version="1.0.601.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.axis.consumption.core [767]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.ui [805]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.jst.ws.axis.consumption.ui [osgi.identity; type="osgi.bundle"; version:Version="1.0.1001.v202304290519"; osgi.identity="org.eclipse.jst.ws.axis.consumption.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.jst.ws.axis.consumption.ui [osgi.identity; type="osgi.bundle"; version:Version="1.0.1001.v202304290519"; osgi.identity="org.eclipse.jst.ws.axis.consumption.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.jst.ws.axis.consumption.ui [osgi.identity; type="osgi.bundle"; version:Version="1.0.1001.v202304290519"; osgi.identity="org.eclipse.jst.ws.axis.consumption.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=1.5.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis.creation.ui 4 0 2024-08-20 12:20:44.634
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis.creation.ui [769]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis.consumption.core; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis.consumption.core; bundle-version="1.0.601.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.axis.consumption.core [767]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.300,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.ui [805]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis.consumption.ui; bundle-version="[1.0.101,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis.consumption.ui; bundle-version="1.0.1001.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.axis.consumption.ui [768]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis.consumption.core; bundle-version="[1.0.101,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis.consumption.core; bundle-version="1.0.601.v202304290519"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis2.consumption.core 4 0 2024-08-20 12:20:44.654
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.consumption.core [772]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.ui; bundle-version="1.0.400.v201903050508"; singleton:="true"
+       org.eclipse.jst.ws.axis2.ui [777]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.ui [805]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+                     org.eclipse.wst.ws.explorer [949]
+                       Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                            org.eclipse.equinox.http.registry [183]
+                              No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis2.consumption.ui 4 0 2024-08-20 12:20:44.676
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.consumption.ui [773]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.ui [805]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.ui; bundle-version="1.0.400.v201903050508"; singleton:="true"
+       org.eclipse.jst.ws.axis2.ui [777]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201903050508"
+       org.eclipse.jst.ws.axis2.consumption.core [772]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.ui; bundle-version="1.0.400.v201903050508"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis2.creation.core 4 0 2024-08-20 12:20:44.697
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.creation.core [775]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201903050508"
+       org.eclipse.jst.ws.axis2.consumption.core [772]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.ui; bundle-version="1.0.400.v201903050508"; singleton:="true"
+              org.eclipse.jst.ws.axis2.ui [777]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+                     org.eclipse.jst.ws.ui [805]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+                            org.eclipse.wst.ws.explorer [949]
+                              Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                                   org.eclipse.equinox.http.registry [183]
+                                     No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+              org.eclipse.jst.ws.consumption.ui [781]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis2.creation.ui 4 0 2024-08-20 12:20:44.720
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.creation.ui [776]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.ui; bundle-version="1.0.200.v201903050508"; singleton:="true"
+       org.eclipse.jst.ws.axis2.consumption.ui [773]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+              org.eclipse.jst.ws.consumption.ui [781]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+                     org.eclipse.wst.ws.explorer [949]
+                       Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                            org.eclipse.equinox.http.registry [183]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+                     org.eclipse.jst.ws.ui [805]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                         -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.ui; bundle-version="1.0.400.v201903050508"; singleton:="true"
+              org.eclipse.jst.ws.axis2.ui [777]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201903050508"
+              org.eclipse.jst.ws.axis2.consumption.core [772]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.ui
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.ui; bundle-version="1.0.400.v201903050508"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.creation.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.creation.core; bundle-version="1.0.200.v201903050508"
+       org.eclipse.jst.ws.axis2.creation.core [775]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201903050508"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.axis2.consumption.core
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.axis2.consumption.core; bundle-version="1.0.200.v201903050508"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.axis2.ui 4 0 2024-08-20 12:20:44.745
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.axis2.ui [777]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.ui [805]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.consumption.ui 4 0 2024-08-20 12:20:44.766
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.consumption.ui [781]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+       org.eclipse.wst.ws.explorer [949]
+         Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+              org.eclipse.equinox.http.registry [183]
+                No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.ui [805]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.creation.ui 4 0 2024-08-20 12:20:44.785
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.creation.ui [784]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.ui [805]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.ui 4 0 2024-08-20 12:20:44.817
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.ui [786]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.ui [805]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.ui 4 0 2024-08-20 12:20:44.836
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.ui [789]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+       org.eclipse.jst.ws.consumption.ui [781]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+              org.eclipse.jst.ws.ui [805]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.creation.ui; bundle-version="[1.0.305,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.creation.ui; bundle-version="1.0.1001.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.creation.ui [784]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="1.0.500.v201910301957"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.ui [786]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.consumption.ui; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.consumption.ui; bundle-version="1.1.1101.v202304290519"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.uddiregistry 4 0 2024-08-20 12:20:44.852
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.uddiregistry [804]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.ui; bundle-version="[1.0.100,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.ui; bundle-version="1.1.1.v202103201626"; singleton:="true"
+       org.eclipse.jst.ws.ui [805]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+              org.eclipse.wst.ws.explorer [949]
+                Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+                     org.eclipse.equinox.http.registry [183]
+                       No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.ws.ui 4 0 2024-08-20 12:20:44.865
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.ui [805]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.ws.explorer; bundle-version="[1.1.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.ws.explorer; bundle-version="1.1.1.v202304290519"; singleton:="true"
+       org.eclipse.wst.ws.explorer [949]
+         Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+              org.eclipse.equinox.http.registry [183]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.ws.explorer 4 0 2024-08-20 12:20:44.899
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.ws.explorer [949]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.http.registry; bundle-version="[1.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.equinox.http.registry; bundle-version="1.3.200.v20220720-2012"; singleton:="true"
+       org.eclipse.equinox.http.registry [183]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.2.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.ws.explorer [osgi.identity; type="osgi.bundle"; version:Version="1.1.1.v202304290519"; osgi.identity="org.eclipse.wst.ws.explorer"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.4.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.wsi 4 0 2024-08-20 12:20:44.904
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.wsi [959]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.wsi [osgi.identity; type="osgi.bundle"; version:Version="1.1.500.v202304280517"; osgi.identity="org.eclipse.wst.wsi"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.wsi [osgi.identity; type="osgi.bundle"; version:Version="1.1.500.v202304280517"; osgi.identity="org.eclipse.wst.wsi"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.17.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.wsi [osgi.identity; type="osgi.bundle"; version:Version="1.1.500.v202304280517"; osgi.identity="org.eclipse.wst.wsi"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.3.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.wsi.ui 4 0 2024-08-20 12:20:44.928
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.wsi.ui [960]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.wsi; bundle-version="[1.0.101,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.wsi; bundle-version="1.1.500.v202304280517"; singleton:="true"
+       org.eclipse.wst.wsi [959]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.wsi [osgi.identity; type="osgi.bundle"; version:Version="1.1.500.v202304280517"; osgi.identity="org.eclipse.wst.wsi"; singleton:="true"] because it is exposed to package 'org.w3c.dom.events' from resources org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"] and org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.wsi [osgi.identity; type="osgi.bundle"; version:Version="1.1.500.v202304280517"; osgi.identity="org.eclipse.wst.wsi"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.core.runtime)(&(bundle-version>=3.17.0)(!(bundle-version>=4.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.core.runtime
+  org.eclipse.osgi [osgi.identity; type="osgi.bundle"; version:Version="3.18.400.v20230509-2241"; osgi.identity="org.eclipse.osgi"; singleton:="true"]
+
+Chain 2:
+  org.eclipse.wst.wsi [osgi.identity; type="osgi.bundle"; version:Version="1.1.500.v202304280517"; osgi.identity="org.eclipse.wst.wsi"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.apache.axis)(&(bundle-version>=1.3.0)(!(bundle-version>=2.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.4.1.v20231107-0937"; osgi.wiring.bundle="org.apache.axis"
+  org.apache.axis [osgi.identity; type="osgi.bundle"; version:Version="1.4.1.v20231107-0937"; osgi.identity="org.apache.axis"]
+    import: (osgi.wiring.package=org.w3c.dom.events)
+     |
+    export: osgi.wiring.package: org.w3c.dom.events
+  org.w3c.dom.events [osgi.identity; type="osgi.bundle"; version:Version="3.0.0.draft20060413_v201105210656"; osgi.identity="org.w3c.dom.events"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.app 0 0 2024-08-20 12:20:45.155
+!MESSAGE Product org.eclipse.epp.package.java.product could not be found.
+
+!ENTRY org.eclipse.jface 2 0 2024-08-20 12:20:49.984
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 12:20:49.984
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 12:20:49.984
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-08-20 12:20:49.984
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-08-20 12:20:53.144
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\91863'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.mylyn.commons.ui 4 0 2024-08-20 12:22:53.083
+!MESSAGE For input string: "or" under radix 16
+!STACK 0
+java.lang.NumberFormatException: For input string: "or" under radix 16
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at org.eclipse.mylyn.internal.commons.ui.E4ThemeColor.getRGBFromCssString(E4ThemeColor.java:57)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getRGBFromTheme(GradientColors.java:211)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getBackground(GradientColors.java:190)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createBorderColor(GradientColors.java:78)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createColors(GradientColors.java:54)
+	at org.eclipse.mylyn.commons.ui.GradientColors.<init>(GradientColors.java:50)
+	at org.eclipse.mylyn.commons.ui.GradientToolTip.initResources(GradientToolTip.java:49)
+	at org.eclipse.mylyn.commons.ui.GradientToolTip.<init>(GradientToolTip.java:44)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListToolTip.<init>(TaskListToolTip.java:126)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListFilteredTree.createActiveTaskComposite(TaskListFilteredTree.java:423)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.createFilterControls(AbstractFilteredTree.java:182)
+	at org.eclipse.ui.dialogs.FilteredTree.createControl(FilteredTree.java:362)
+	at org.eclipse.mylyn.commons.workbench.EnhancedFilteredTree.createControl(EnhancedFilteredTree.java:61)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.createControl(AbstractFilteredTree.java:92)
+	at org.eclipse.ui.dialogs.FilteredTree.init(FilteredTree.java:331)
+	at org.eclipse.ui.dialogs.FilteredTree.<init>(FilteredTree.java:289)
+	at org.eclipse.mylyn.commons.workbench.EnhancedFilteredTree.<init>(EnhancedFilteredTree.java:48)
+	at org.eclipse.mylyn.commons.workbench.AbstractFilteredTree.<init>(AbstractFilteredTree.java:71)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListFilteredTree.<init>(TaskListFilteredTree.java:135)
+	at org.eclipse.mylyn.internal.tasks.ui.views.TaskListView.createPartControl(TaskListView.java:591)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:987)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:952)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:141)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:395)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:322)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:110)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1384)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1334)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.close(StackRenderer.java:1177)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1970)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:337)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2024-08-20 12:22:53.115
+!MESSAGE No search provider was registered. Tasks search is not available.
