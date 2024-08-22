@@ -1,5 +1,0 @@
-package com.code.api.exception;
-
-public class BookIsbnAlreadyExits {
-
-}
